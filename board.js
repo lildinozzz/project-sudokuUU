@@ -12,11 +12,6 @@ const testSudoku = [
 
 function findEmpty(arr) {
   const test = arr.map((elem) => elem.join(' '));
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 0) {
-      arr[i].replace(0, 5);
-    }
-  }
-  return test.map((elem) => elem.replace(0, 5));
+  return test;
 }
-console.log(findEmpty(testSudoku));
+console.table(findEmpty(testSudoku));
