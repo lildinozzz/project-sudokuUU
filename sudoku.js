@@ -56,7 +56,6 @@ function checkSquare(board, coord, num) {
   const colSquare = Math.floor(col / 3) * 3;
   for (let i = rowSquare; i < rowSquare + 3; i++) {
     for (let j = colSquare; j < colSquare + 3; j++) {
-      console.log(board[i][j]);
       if (board[i][j] == num) {
         return false;
       }
