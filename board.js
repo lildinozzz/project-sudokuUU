@@ -11,3 +11,11 @@ const testSudoku = [
 ];
 
 // функция которая смотрит направо
+
+function findEmty(arr) {
+  const newArr = arr.map((el) => el.join(' '));
+  newArr = newArr.forEach();
+
+  console.log(newArr);
+}
+findEmty(testSudoku);
