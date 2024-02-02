@@ -18,4 +18,3 @@ function findEmty(arr) {
 
   console.log(newArr);
 }
-findEmty(testSudoku);
