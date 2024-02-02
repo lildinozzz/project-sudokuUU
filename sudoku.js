@@ -1,9 +1,13 @@
-function read() {
-  /**
-   * Прочесть файл puzzles.txt в кодировке 'utf-8' и вернуть эти данные из функции
-   */
-}
 
+const fs = require('fs');
+function read() {
+  const arrName = fs.readFileSync("./puzzles.txt", "utf-8")
+  const splitNem = arrName.split('\n').map((el) => el.split(' '))
+ 
+    });
+  return splitNem
+}
+console.log(read());
 function solve() {
   /**
    * Принимает игровое поле в том формате, в котором его вернули из функции read.
