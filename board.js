@@ -9,3 +9,14 @@ const testSudoku = [
   [8, 0, 0, 0, 0, 1, 0, 0, 0],
   [0, 7, 0, 0, 5, 0, 4, 0, 0],
 ];
+
+function findEmpty(arr) {
+  const test = arr.map((elem) => elem.join(' '));
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 0) {
+      arr[i].replace(0, 5);
+    }
+  }
+  return test.map((elem) => elem.replace(0, 5));
+}
+console.log(findEmpty(testSudoku));
